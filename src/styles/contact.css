@@ -27,6 +27,7 @@ h1, h2, h3, .section-title, .info-title {
   text-align: center;
   color: white;
   padding: 0 20px;
+  margin-top: 0px; /* Added head space above hero section */
 }
 
 .hero-content {
@@ -244,6 +245,7 @@ h1, h2, h3, .section-title, .info-title {
   .contact-hero {
     height: 60vh;
     min-height: 400px;
+    margin-top: 60px; /* Reduced head space on tablets */
   }
   
   .hero-content h1 {
@@ -266,6 +268,7 @@ h1, h2, h3, .section-title, .info-title {
 @media (max-width: 480px) {
   .contact-hero {
     height: 50vh;
+    margin-top: 40px; /* Further reduced head space on mobile */
   }
   
   .hero-content h1 {
@@ -466,37 +469,46 @@ h1, h2, h3, .section-title, .info-title {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .reviews-section {
-    padding: 2rem 1rem;
+  .contact-hero {
+    height: auto;
+    min-height: 400px;
+    padding-top: 80px; /* Added headspace */
+    padding-bottom: 40px;
+    margin-top: 40px;
   }
-  
-  .reviews-summary {
-    flex-direction: column;
-    gap: 1rem;
+
+  .hero-content h1 {
+    font-size: 2.2rem;
   }
-  
-  .reviews-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+
+  .hero-description {
+    font-size: 1.1rem;
   }
-  
-  .review-card {
-    padding: 1rem;
+
+  .section-title {
+    font-size: 2rem;
   }
-  
-  .review-header {
-    flex-direction: column;
-    gap: 0.75rem;
-    align-items: flex-start;
+
+  .contact-form, .info-card {
+    padding: 25px;
   }
-  
-  .rating-number {
-    font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .contact-hero {
+    height: auto;
+    min-height: 350px;
+    padding-top: 100px; /* More headspace for small devices */
+    padding-bottom: 40px;
+    margin-top: 30px;
   }
-  
-  .google-reviews-link,
-  .write-review-btn {
-    padding: 0.75rem 1.25rem;
-    font-size: 0.9rem;
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .map-container {
+    height: 350px;
+    margin-bottom: 60px;
   }
 }
