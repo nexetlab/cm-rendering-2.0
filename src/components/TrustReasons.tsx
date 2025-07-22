@@ -1,4 +1,5 @@
 import '../styles/trustReasons.css';
+import { Link } from 'react-router-dom';
 
 interface Reason {
   title: string;
@@ -75,7 +76,9 @@ const TrustReasons = () => {
           ))}
         </div>
       </div>
-      <a href='/about'><button className="about-button">About Us</button></a>
+      <Link to="/about">
+        <button className="about-button">About Us</button>
+      </Link>
     </section>
   );
 };
