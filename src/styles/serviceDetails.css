@@ -1,0 +1,236 @@
+/* styles/serviceDetails.css */
+
+.service-detail-page {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.service-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--hero-bg-image);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.service-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.service-description {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Why Choose Section */
+.why-choose {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+.why-choose h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.benefits-list {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  background-color: white;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  padding-left: 3rem;
+  font-size: 1.1rem;
+}
+
+.benefits-list li:before {
+  content: "✓";
+  color: #4CAF50;
+  font-weight: bold;
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+/* Process Section */
+.our-process {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.our-process h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-step {
+  flex: 1 1 300px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+  background: #FF6B35;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.process-step h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+
+
+/* Additional Sections */
+.additional-sections {
+  background: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+  }
+  
+  .process-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .process-step {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.service-faq {
+  padding: 2rem 1rem;
+  background-color: #fffaf5;
+  border-top: 2px solid #ff6b35;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.service-faq h2 {
+  font-size: 1.75rem;
+  color: #ff6b35;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.service-faq-item {
+  border-bottom: 1px solid #ffe3d1;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-faq-item:hover {
+  background-color: #fff1e8;
+}
+
+.service-faq-question {
+  font-weight: 600;
+  color: #2c3e50;
+  position: relative;
+  padding-right: 2rem;
+}
+
+.service-faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  color: #ff6b35;
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.service-faq-item.open .service-faq-question::after {
+  transform: rotate(45deg);
+}
+
+.service-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  padding-left: 0.5rem;
+}
+
+.service-faq-item.open .service-faq-answer {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 0.5rem;
+}

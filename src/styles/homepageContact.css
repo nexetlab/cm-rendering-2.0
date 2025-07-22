@@ -1,0 +1,153 @@
+/* Import stylish fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+.homepage-contact {
+  /* Enhanced background with online image */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+              url('/images/14.jpeg') center/cover;
+  padding: 8rem 2rem;
+  margin: 4rem 0;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage-contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  z-index: 1;
+}
+
+.contact-container {
+  /* Made section much wider */
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-text {
+  flex: 1;
+  min-width: 350px;
+}
+
+.contact-heading {
+  /* Stylish font - Crimson Text */
+  font-size: 3rem;
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.contact-subheading {
+  /* Stylish font - Inter */
+  font-size: 1.4rem;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: -0.01em;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  max-width: 650px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 300;
+}
+
+.contact-button {
+  /* More transparent button */
+  background-color: rgba(231, 76, 60, 0.4);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.contact-button:hover {
+  background-color: rgba(192, 57, 43, 0.6);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(231, 76, 60, 0.2);
+  backdrop-filter: blur(15px);
+}
+
+.contact-button:active {
+  transform: translateY(-1px);
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 768px) {
+  .homepage-contact {
+    padding: 5rem 1.5rem;
+    margin: 3rem 0;
+  }
+  
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    max-width: 100%;
+  }
+  
+  .contact-text {
+    min-width: auto;
+  }
+  
+  .contact-heading {
+    font-size: 2.5rem;
+  }
+  
+  .contact-subheading {
+    font-size: 1.2rem;
+  }
+  
+  .contact-description {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-heading {
+    font-size: 2.2rem;
+  }
+  
+  .contact-subheading {
+    font-size: 1.1rem;
+  }
+  
+  .contact-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  .homepage-contact {
+    padding: 4rem 1rem;
+  }
+}
