@@ -139,7 +139,7 @@ const Testimonials = () => {
       </div>
 
       <a 
-        href="https://maps.google.com" 
+        href="https://www.google.com/maps/place/C+%26+M+Rendering/@-33.8579121,150.8070933,11z/data=!3m1!4b1!4m6!3m5!1s0xa7797bcc6c956925:0x7a95acb1010f81e8!8m2!3d-33.8580218!4d150.9719001!16s%2Fg%2F11vplnngxl?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="reviews-link"
