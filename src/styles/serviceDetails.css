@@ -1,3 +1,79 @@
+.service-banner {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.banner-image-container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Increased from 400px */
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem; /* Added padding for better spacing */
+}
+
+.banner-content {
+  text-align: center;
+  padding: 0 2rem;
+  margin-top: 1rem; /* Added top margin for better vertical positioning */
+}
+
+.banner-title {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .banner-image-container {
+    height: 350px; /* Increased from 250px for more vertical space */
+  }
+  
+  .banner-content {
+    margin-top: 2rem; /* More top margin in mobile for better spacing */
+  }
+  
+  .banner-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-image-container {
+    height: 300px;
+  }
+  
+  .banner-content {
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .banner-title {
+    font-size: 1.8rem;
+  }
+}
+
 /* styles/serviceDetails.css */
 
 .service-detail-page {
@@ -11,14 +87,14 @@
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 5rem 0;
+  padding: 1rem 0;
   text-align: center;
   position: relative;
 }
 
 .service-hero h1 {
   font-size: 2.8rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
   font-weight: 700;
 }
 
@@ -144,8 +220,6 @@
   color: #333;
 }
 
-
-
 /* Additional Sections */
 .additional-sections {
   background: white;
@@ -164,73 +238,52 @@
   .process-steps {
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem; /* Reduced gap between boxes */
   }
   
   .process-step {
     width: 100%;
-    max-width: 400px;
+    max-width: 320px; /* Reduced from 400px */
+    max-height: 150px;
+    padding: 1rem; /* Reduced padding */
+    margin: 0 1rem; /* Added side margins to prevent edge touching */
+  }
+  
+  .process-step h3 {
+    font-size: 1.2rem; /* Slightly smaller heading */
+    margin-bottom: 0.8rem;
+  }
+  
+  .step-number {
+    width: 2.5rem; /* Slightly smaller step number circle */
+    height: 2.5rem;
+    top: -1.25rem;
+    left: -1.25rem;
+    font-size: 1rem;
   }
 }
 
-.service-faq {
-  padding: 2rem 1rem;
-  background-color: #fffaf5;
-  border-top: 2px solid #ff6b35;
-  border-radius: 1rem;
-  margin-top: 2rem;
-}
-
-.service-faq h2 {
-  font-size: 1.75rem;
-  color: #ff6b35;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.service-faq-item {
-  border-bottom: 1px solid #ffe3d1;
-  padding: 1rem 0;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.service-faq-item:hover {
-  background-color: #fff1e8;
-}
-
-.service-faq-question {
-  font-weight: 600;
-  color: #2c3e50;
-  position: relative;
-  padding-right: 2rem;
-}
-
-.service-faq-question::after {
-  content: '+';
-  position: absolute;
-  right: 0;
-  color: #ff6b35;
-  font-size: 1.25rem;
-  transition: transform 0.3s ease;
-}
-
-.service-faq-item.open .service-faq-question::after {
-  transform: rotate(45deg);
-}
-
-.service-faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  color: #444;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-  opacity: 0;
-  padding-left: 0.5rem;
-}
-
-.service-faq-item.open .service-faq-answer {
-  max-height: 200px;
-  opacity: 1;
-  margin-top: 0.5rem;
+/* Additional mobile optimization for very small screens */
+@media (max-width: 480px) {
+  .process-steps {
+    gap: 1rem; /* Even smaller gap for very small screens */
+  }
+  
+  .process-step {
+    max-width: 280px; /* Even more compact for small phones */
+    padding: 1.25rem;
+    margin: 0 0.5rem;
+  }
+  
+  .process-step h3 {
+    font-size: 1.1rem;
+  }
+  
+  .step-number {
+    width: 2.25rem;
+    height: 2.25rem;
+    top: -1.125rem;
+    left: -1.125rem;
+    font-size: 0.9rem;
+  }
 }

@@ -21,15 +21,30 @@ const ConcreteFinish = () => {
       { title: "Concrete Application", description: "Precision placement of concrete or overlay" },
       { title: "Finishing", description: "Achieving desired texture - polished, stamped, or exposed aggregate" },
       { title: "Sealing", description: "Application of protective sealants" }
-    ],
-    faq: [
-      { question: "Can concrete finishes be used on walls?", answer: "Yes, we can apply decorative concrete finishes on both horizontal and vertical surfaces." },
-      { question: "How do you prevent cracking?", answer: "We use control joints, quality mixes, and proper curing techniques to minimize cracking." },
-      { question: "Is polished concrete slippery?", answer: "When properly sealed, it has similar slip resistance to other hard flooring options." }
     ]
   };
 
-  return <ServiceDetail serviceDetails={serviceDetails} />;
+  return (
+    <div>
+      {/* Banner Section */}
+      <div className="service-banner">
+        <div className="banner-image-container">
+          <img 
+            src="/images/4.jpeg" 
+            alt="Acrylic Render Texture Coatings" 
+            className="banner-image"
+          />
+          <div className="banner-overlay">
+            <div className="banner-content">
+              <h1 className="banner-title">{serviceDetails.title}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <ServiceDetail serviceDetails={serviceDetails} />
+    </div>
+  );
 };
 
 export default ConcreteFinish;

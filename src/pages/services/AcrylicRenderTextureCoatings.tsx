@@ -21,15 +21,30 @@ const AcrylicRenderTextureCoatings = () => {
       { title: "Base Coat Application", description: "Application of acrylic render base coat with reinforcement mesh where needed" },
       { title: "Texture Application", description: "Creation of your chosen texture using specialized tools and techniques" },
       { title: "Sealing & Protection", description: "Application of protective sealants or topcoats for enhanced durability" }
-    ],
-    faq: [
-      { question: "How long does acrylic render last?", answer: "Properly applied acrylic render can last 15-20 years or more with minimal maintenance." },
-      { question: "Can acrylic render be applied over existing surfaces?", answer: "Yes, it can be applied over many existing surfaces including brick, concrete, and some existing renders after proper preparation." },
-      { question: "Is acrylic render suitable for exterior use?", answer: "Absolutely. In fact, its flexibility and weather resistance make it ideal for exterior applications." }
     ]
   };
 
-  return <ServiceDetail serviceDetails={serviceDetails} />;
+  return (
+    <div>
+      {/* Banner Section */}
+      <div className="service-banner">
+        <div className="banner-image-container">
+          <img 
+            src="/images/2.jpeg" 
+            alt="Acrylic Render Texture Coatings" 
+            className="banner-image"
+          />
+          <div className="banner-overlay">
+            <div className="banner-content">
+              <h1 className="banner-title">{serviceDetails.title}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <ServiceDetail serviceDetails={serviceDetails} />
+    </div>
+  );
 };
 
 export default AcrylicRenderTextureCoatings;

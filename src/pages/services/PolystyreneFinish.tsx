@@ -21,15 +21,30 @@ const PolystyreneFinish = () => {
       { title: "Reinforcement", description: "Application of fibreglass mesh and base coat for structural integrity" },
       { title: "Render Application", description: "Specialized acrylic render application for durable finish" },
       { title: "Final Texture", description: "Creation of your chosen decorative finish" }
-    ],
-    faq: [
-      { question: "Is polystyrene finish durable?", answer: "Yes, when properly installed and rendered, it's highly durable and impact-resistant." },
-      { question: "Does it provide insulation?", answer: "Yes, polystyrene offers excellent thermal insulation, reducing energy costs." },
-      { question: "Can it be painted?", answer: "Absolutely, it accepts paint beautifully after proper preparation." }
     ]
   };
 
-  return <ServiceDetail serviceDetails={serviceDetails} />;
+  return (
+    <div>
+      {/* Banner Section */}
+      <div className="service-banner">
+        <div className="banner-image-container">
+          <img 
+            src="/images/7.jpeg" 
+            alt="Acrylic Render Texture Coatings" 
+            className="banner-image"
+          />
+          <div className="banner-overlay">
+            <div className="banner-content">
+              <h1 className="banner-title">{serviceDetails.title}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <ServiceDetail serviceDetails={serviceDetails} />
+    </div>
+  );
 };
 
 export default PolystyreneFinish;

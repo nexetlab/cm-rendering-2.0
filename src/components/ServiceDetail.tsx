@@ -10,10 +10,7 @@ interface ProcessStep {
   description: string;
 }
 
-interface FAQItem {
-  question: string;
-  answer: string;
-}
+
 
 interface ServiceDetailsProps {
   serviceDetails: {
@@ -21,7 +18,6 @@ interface ServiceDetailsProps {
     description: string;
     whyChoose: string[];
     process: ProcessStep[];
-    faq: FAQItem[];
   };
 }
 
@@ -69,21 +65,6 @@ const ServiceDetail: React.FC<ServiceDetailsProps> = ({ serviceDetails }) => {
           </div>
         </div>
       </section>
-
-      <section className="service-faq">
-        <div className="container">
-          <h2>Frequently Asked Questions</h2>
-          <div className="faq-items">
-            {serviceDetails.faq.map((item, index) => (
-              <div key={index} className="faq-item">
-                <h3>{item.question}</h3>
-                <p>{item.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <div className="additional-sections">
         <RecentWork />
         <HomepageContact />

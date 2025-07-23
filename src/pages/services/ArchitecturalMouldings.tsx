@@ -21,15 +21,30 @@ const ArchitecturalMouldings = () => {
       { title: "Material Selection", description: "Choosing between polyurethane, plaster, or other materials" },
       { title: "Fabrication", description: "Custom creation of your mouldings" },
       { title: "Installation & Finishing", description: "Precise installation and seamless finishing" }
-    ],
-    faq: [
-      { question: "What materials do you use for mouldings?", answer: "We work with high-quality polyurethane, plaster, and occasionally timber, depending on your needs." },
-      { question: "Can you match existing mouldings in heritage homes?", answer: "Yes, we specialize in replicating and matching period mouldings." },
-      { question: "How durable are modern moulding materials?", answer: "Modern materials like polyurethane are extremely durable, resistant to cracking and moisture." }
     ]
   };
 
-  return <ServiceDetail serviceDetails={serviceDetails} />;
+  return (
+    <div>
+      {/* Banner Section */}
+      <div className="service-banner">
+        <div className="banner-image-container">
+          <img 
+            src="/images/3.jpeg" 
+            alt="Acrylic Render Texture Coatings" 
+            className="banner-image"
+          />
+          <div className="banner-overlay">
+            <div className="banner-content">
+              <h1 className="banner-title">{serviceDetails.title}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <ServiceDetail serviceDetails={serviceDetails} />
+    </div>
+  );
 };
 
 export default ArchitecturalMouldings;

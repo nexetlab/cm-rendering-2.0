@@ -21,15 +21,30 @@ const PaintingServices = () => {
       { title: "Priming", description: "Application of appropriate primers for optimal adhesion" },
       { title: "Painting", description: "Multiple coats applied with professional techniques" },
       { title: "Final Inspection", description: "Quality check and touch-ups as needed" }
-    ],
-    faq: [
-      { question: "How long should I wait before painting new render?", answer: "Typically 4-6 weeks to allow for complete curing, depending on conditions." },
-      { question: "Do you provide colour consultation?", answer: "Yes, we can provide expert advice on colour selection and combinations." },
-      { question: "How long will the paint last?", answer: "With proper preparation and quality paints, exterior paint jobs typically last 7-10 years, interiors 10+ years." }
     ]
   };
 
-  return <ServiceDetail serviceDetails={serviceDetails} />;
+  return (
+    <div>
+      {/* Banner Section */}
+      <div className="service-banner">
+        <div className="banner-image-container">
+          <img 
+            src="/images/10.jpeg" 
+            alt="Acrylic Render Texture Coatings" 
+            className="banner-image"
+          />
+          <div className="banner-overlay">
+            <div className="banner-content">
+              <h1 className="banner-title">{serviceDetails.title}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <ServiceDetail serviceDetails={serviceDetails} />
+    </div>
+  );
 };
 
 export default PaintingServices;

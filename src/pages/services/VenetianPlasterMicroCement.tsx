@@ -21,15 +21,30 @@ const VenetianPlasterMicroCement = () => {
       { title: "Base Layer", description: "Application of initial layers with specialized tools" },
       { title: "Burnishing", description: "Polishing between layers to achieve depth and sheen" },
       { title: "Final Sealing", description: "Application of protective wax or sealant" }
-    ],
-    faq: [
-      { question: "How is Venetian plaster different from regular plaster?", answer: "Venetian plaster contains marble dust which gives it its distinctive luminous quality and depth." },
-      { question: "Can Venetian plaster be used in bathrooms?", answer: "Yes, when properly sealed it's highly moisture-resistant." },
-      { question: "How long does the application process take?", answer: "Depending on the complexity, it typically takes 3-5 days including drying time between layers." }
     ]
   };
 
-  return <ServiceDetail serviceDetails={serviceDetails} />;
+  return (
+    <div>
+      {/* Banner Section */}
+      <div className="service-banner">
+        <div className="banner-image-container">
+          <img 
+            src="/images/15.jpeg" 
+            alt="Acrylic Render Texture Coatings" 
+            className="banner-image"
+          />
+          <div className="banner-overlay">
+            <div className="banner-content">
+              <h1 className="banner-title">{serviceDetails.title}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <ServiceDetail serviceDetails={serviceDetails} />
+    </div>
+  );
 };
 
 export default VenetianPlasterMicroCement;
