@@ -12,26 +12,38 @@ const Testimonials = () => {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      quote: "C & M Rendering did an amazing job on our house. The attention to detail was exceptional!",
+      quote: "I love C & M Rendering works Nikki is great Business women who have very high standards of work and friendly attitude and she is a great personality to deal with. Her finishing is amazing. Love you Nikki for marketing my house look luxury and Beautiful.. standing out from all our street houses",
       author: "Sarah J., Homeowner",
       rating: 5
     },
     {
       id: 2,
-      quote: "Professional from start to finish. Highly recommend their services to anyone looking for quality work.",
-      author: "Michael T., Builder",
+      quote: "Nikki from C&M Rendering is an exceptional professional. She is highly ethical, takes her work seriously, and consistently provides the right advice. A true perfectionist, Nikki never settles for anything less than perfect, no matter how small the deviation. Such dedication is rare in any trade these days. She consistently upholds trust and reliability, delivering projects on time. Her team, reflecting Nikki's high standards, maintains a clean and tidy job site throughout the project and leaves it in pristine condition.",
+      author: "Krishna Oruganti",
       rating: 5
     },
     {
       id: 3,
-      quote: "Nikki and her team went above and beyond to ensure we were happy with every aspect of the project.",
-      author: "Lisa M., Property Developer",
-      rating: 4
+      quote: "Nikki and her team has done a good job with rendering my facade. Happy with their professionalism.",
+      author: "Avijit Ghosh",
+      rating: 5
     },
     {
       id: 4,
-      quote: "The rendering work transformed our home completely. Worth every penny!",
-      author: "David K., Architect",
+      quote: "Niki and her team did a fantastic job. Last min we also requested to change colour of a column and they happily accommodated next day and that shows how customer centric this team is. I was really impressed with the passion that they have done the job.",
+      author: "Atanu Shaw",
+      rating: 5
+    },
+    {
+      id: 5,
+      quote: "Very reliable. Punctual. Done a job as per our requirements. Strongly recommended.",
+      author: "Chetankumar Changakar",
+      rating: 5
+    },
+    {
+      id: 6,
+      quote: "just wanted to say thanks for the great work on the texture application! It looks fantastic! Big thank you to Nikki and team",
+      author: "SR DEVELOPERS",
       rating: 5
     }
   ];

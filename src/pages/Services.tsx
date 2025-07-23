@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 import ServicesOverview from '../components/ServicesOverview';
-import FAQ from '../components/Faq';
 import RecentWork from '../components/RecentWork';
 import HomepageContact from '../components/HomepageContact';
 import '../styles/services.css';
@@ -95,7 +94,6 @@ const Services = () => {
       </section>
 
       <div className="additional-sections">
-        <FAQ />
         <HomepageContact />
         <RecentWork />
       </div>

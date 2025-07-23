@@ -13,6 +13,7 @@ import VenetianPlasterMicroCement from './pages/services/VenetianPlasterMicroCem
 import PaintingServices from './pages/services/PaintingServices';
 import ArchitecturalMouldings from './pages/services/ArchitecturalMouldings';
 import ConcreteFinish from './pages/services/ConcreteFinish';
+import Gallery from './pages/Gallery'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/services/painting-services" element={<PaintingServices />} />
           <Route path="/services/architectural-mouldings" element={<ArchitecturalMouldings />} />
           <Route path="/services/concrete-finish" element={<ConcreteFinish />} />
+          <Route path="/gallery" element={<Gallery />} />
           {/* Add other routes as needed */}
         </Routes>
       </Layout>

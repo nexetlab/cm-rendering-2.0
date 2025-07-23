@@ -1,4 +1,5 @@
 // RecentWork.tsx
+import { Link } from 'react-router-dom';
 import '../styles/recentWork.css';
 
 interface ProjectImage {
@@ -36,11 +37,9 @@ const RecentWork = () => {
       <h2 className="gallery-title">Our Recent Work</h2>
       <div className="project-thumbnails">
         {projectImages.map((project, index) => (
-          <a
+          <Link
             key={index}
-            href="https://www.instagram.com/c_mrendering"
-            target="_blank"
-            rel="noopener noreferrer"
+            to="/gallery"
             style={{ textDecoration: 'none', color: 'inherit' }}
           >
             <div className="thumbnail-container">
@@ -52,7 +51,7 @@ const RecentWork = () => {
                 )}
               </div>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>

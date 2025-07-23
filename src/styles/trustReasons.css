@@ -134,10 +134,10 @@
   }
   
   .trust-overlay-circle {
-    right: 50%;
-    transform: translate(50%, -50%);
-    width: 250px;
-    height: 250px;
+    right: 0;
+    transform: translate(30%, -50%);
+    width: 180px;
+    height: 180px;
   }
   
   .trust-reasons-grid {
@@ -151,8 +151,13 @@
     grid-template-columns: 1fr;
   }
   
+  .trust-overlay-circle {
+    width: 150px;
+    height: 150px;
+  }
+  
   .trust-overlay-circle h2 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   
   .trust-image-container {
@@ -163,13 +168,13 @@
 
 @media (max-width: 480px) {
   .trust-overlay-circle {
-    width: 90%;
-    height: 90%;
-    padding: 1.5rem;
+    width: 120px;
+    height: 120px;
+    padding: 1rem;
   }
   
   .trust-overlay-circle h2 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   
   .reason-card {

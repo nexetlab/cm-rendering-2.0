@@ -17,6 +17,14 @@ const Intro = () => {
             peace of mind. At the heart of everything we do is a commitment to building lasting relationships 
             based on trust, compassion, and collaboration—because we're not just creating homes, we're creating 
             a legacy.
+            </p>
+            <p>
+            At the heart of everything we do is a commitment to building lasting relationshops based on trust,
+            compassion, and collaboration--because we're not jsut creating homes, we're creating leagcy.
+            </p>
+            <p>
+            Get touch with CM Rendering to take advantage of our Wealth of knowledge passed down through decades
+            of experience.
           </p>
         </div>
       </div>

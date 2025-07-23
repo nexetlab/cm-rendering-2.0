@@ -2,7 +2,6 @@
 import TeamPhilosophy from '../components/TeamPhilosophy';
 import MissionValues from '../components/MissionValues';
 import Testimonials from '../components/Testimonials';
-import FAQ from '../components/Faq';
 import HomepageContact from '../components/HomepageContact';
 import RecentWork from '../components/RecentWork';
 import '../styles/about.css'
@@ -23,7 +22,6 @@ const About = () => {
       <TeamPhilosophy />
       <Testimonials />
       <MissionValues />
-      <FAQ />
       <HomepageContact />
       <RecentWork />
     </div>
